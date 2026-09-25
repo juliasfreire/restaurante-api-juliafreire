@@ -10,10 +10,7 @@ const PORT = 3001
 
 
 app.use(express.json())
-app.use(cors({
-    origin: "https://restaurante-front-juliafreire-mbed-b88o4krzm-julia-freire.vercel.app",
-    credentials: true
-}));
+app.use(cors())
 
 app.get("/",(req,res)=>{
     res.json({
